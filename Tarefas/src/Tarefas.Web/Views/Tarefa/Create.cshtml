@@ -1,5 +1,5 @@
 @model Tarefas.Web.Models.TarefaViewModel
-<form asp-action="Create">
+<form class="form-group" asp-action="Create">
     @Html.LabelFor(model => model.Titulo, new {@class ="form-label"})
     @Html.TextBoxFor(model => model.Titulo,  new {@class ="form-control"})
     @Html.LabelFor(model => model.Descricao,  new {@class ="form-label"})

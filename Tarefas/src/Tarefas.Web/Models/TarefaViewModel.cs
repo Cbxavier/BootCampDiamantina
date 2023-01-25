@@ -9,5 +9,6 @@ namespace Tarefas.Web.Models
         public string Titulo{get;set;}
         [DisplayName("Descrição")]
         public string Descricao{get;set;}
+        
     }    
 }
