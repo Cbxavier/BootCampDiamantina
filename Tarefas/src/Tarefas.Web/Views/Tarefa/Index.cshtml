@@ -2,6 +2,9 @@
 <table class="table table-white">
     <tr>
         <td>
+            Id
+        </td>
+        <td>
             Titulo
         </td>
         <td>
@@ -12,12 +15,18 @@
     @foreach (var item in Model)
     {
         <tr>
-        <td>
-            @item.Titulo
-        </td>
-        <td>
-            @item.Descricao
-        </td>
+            <td>
+                @item.Id
+            </td>
+            <td>
+                @item.Titulo
+            </td>
+            <td>
+                @item.Descricao
+            </td>
+            <td>
+                <a asp-action="Details" asp-controller="Tarefa" asp-rote-id="@item.Id">Detalhes</a>
+            </td>
 
         </tr>
     } 
